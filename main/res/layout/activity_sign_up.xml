@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape"
+            android:elevation="30dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Sign Up"
+                android:textAlignment="textStart"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:boxStrokeColor="?attr/colorSecondary"
+                app:endIconMode="clear_text"
+                app:endIconScaleType="centerInside"
+                app:hintTextColor="?attr/colorSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameETS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_person_outline_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#2196F3"
+                    android:hint="Enter name"
+                    android:inputType="text|textPersonName"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:boxStrokeColor="?attr/colorSecondary"
+                app:endIconMode="clear_text"
+                app:endIconScaleType="centerInside"
+                app:hintTextColor="?attr/colorSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userETS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_mail_outline_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#2196F3"
+                    android:hint="Enter email address"
+                    android:inputType="text|textEmailAddress"
+                    android:textSize="20sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:boxStrokeColor="?attr/colorSecondary"
+                app:endIconMode="password_toggle"
+                app:endIconScaleType="centerInside"
+                app:hintTextColor="?attr/colorSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passETS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_vpn_key_24"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#2196F3"
+                    android:hint="Enter password"
+                    android:inputType="text|textPassword"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/loginTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Already have account(Login)"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="#2196F3"
+                android:text="Sign Up"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                app:rippleColor="#00BCD4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
